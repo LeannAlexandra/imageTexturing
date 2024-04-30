@@ -15,7 +15,26 @@ This project applies texture to an input image using OpenCV and C++.
 
 ## Overview
 
-This project demonstrates how to overlay a texture onto an input image using OpenCV in a C++ environment. The texture is adjusted based on intensity to create visually appealing effects.
+<table align="center">
+  <tr>
+    <td align="center">
+      <img src="https://github.com/LeannAlexandra/imageTexturing/blob/main/inputImage.jpg?raw=true" alt="Input Image" style="max-width: 100%; max-height: 200px; margin-bottom: 10px;">
+      <br>
+      <figcaption>Input Image: Original image used for texture mapping. - <a href="https://unsplash.com/@lucabravo">Luca Bravo</a> @<a href="https://unsplash.com/photos/brown-house-near-body-of-water-zAjdgNXsMeg">Unsplash</a></figcaption>
+    </td>
+    <td align="center">
+      <img src="https://github.com/LeannAlexandra/imageTexturing/blob/main/canvas.jpg?raw=true" alt="Texture" style="max-width: 100%; max-height: 200px; margin-bottom: 10px;">
+      <br>
+      <figcaption>Texture: Image used as a texture overlay. -<a href="https://unsplash.com/@anniespratt">Annie Sprat</a> <a href="https://unsplash.com/photos/white-textile-with-black-line-xz485Eku8O4">Unsplash</a></figcaption>
+    </td>
+    <td align="center">
+      <img src="https://github.com/LeannAlexandra/imageTexturing/blob/main/exampleoutput.jpg?raw=true" alt="Final Image" style="max-width: 100%; max-height: 200px; margin-bottom: 10px;">
+      <br>
+      <figcaption>Final Image: Resulting image with applied texture.</figcaption>
+    </td>
+  </tr>
+</table>
+
 
 ## Prerequisites
 
