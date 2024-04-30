@@ -26,7 +26,7 @@ void addTexture() {
 		 cv::Mat textureImage=cv::imread("canvas.jpg",cv::IMREAD_GRAYSCALE);
 		 
 		 //Mat memImg; //memory image aka afterimage
-		 cv::Mat img =cv::imread ("inputimage.jpg", cv::IMREAD_COLOR);// 3 channel bgr
+		 cv::Mat img =cv::imread ("inputImage.jpg", cv::IMREAD_COLOR);// 3 channel bgr
 
 		//  cap.read(img);
 		 if (!(textureImage.cols >= img.cols) || !(textureImage.rows >= img.rows)) {
@@ -49,7 +49,7 @@ void addTexture() {
 		 //cv::imshow("normalized texture", normalizedTexture);
 
 
-		 std::cout << "x "<< img.cols <<"y "<< img.rows << std::endl;
+		 //std::cout << "x "<< img.cols <<"y "<< img.rows << std::endl;
 		 /* DISCLAIMER: CHANGING THIS TO TRUE CREATES AN INFINITE LOOP */
 		 bool again = false;  
 
@@ -93,7 +93,7 @@ void addTexture() {
 			 cv::cvtColor(hsvImage, outputImage, cv::COLOR_HSV2BGR);
 
 			 cv::imshow("final", outputImage);
-			 cv::waitKey(1); //wait for key press to continue to next frame
+			 cv::waitKey(0); //wait for key press to continue to next frame
 
 
 		 } while (again); //please note this is an infinite loop
