@@ -52,7 +52,7 @@ void addTexture() {
   // std::cout << "x "<< img.cols <<"y "<< img.rows << std::endl;
   /* DISCLAIMER: CHANGING THIS TO TRUE CREATES AN INFINITE LOOP */
   bool again = false;
-bool saveImage=false;
+  bool saveImage = false;
   //  float satMargin = 0.1; // not used
   float valMargin = 0.4;
   float textureMidpoint = 0.7;
@@ -94,24 +94,22 @@ bool saveImage=false;
     // Convert HSV image back to BGR color space
     cv::cvtColor(hsvImage, outputImage, cv::COLOR_HSV2BGR);
 
-if (saveImage){
- // Save the processed image to a file
-  std::string outputPath = "exampleoutput.jpg";
-  bool result = cv::imwrite(outputPath, outputImage);
+    if (saveImage) {
+      // Save the processed image to a file
+      std::string outputPath = "output.jpg";
+      bool result = cv::imwrite(outputPath, outputImage);
 
-  if (result) {
-    std::cout << "Image saved successfully as: " << outputPath << std::endl;
-  } else {
-    std::cerr << "Error: Failed to save image." << std::endl;
-    return;
-  }
-
+      if (result) {
+        std::cout << "Image saved successfully as: " << outputPath << std::endl;
+      } else {
+        std::cerr << "Error: Failed to save image." << std::endl;
+        return;
+      }
+    }
     cv::imshow("final", outputImage);
     cv::waitKey(0); // wait for key press to continue to next frame
-}
-  } while (again); // please note this is an infinite loop
 
- 
+  } while (again); // please note this is an infinite loop
 }
 int main() {
 
